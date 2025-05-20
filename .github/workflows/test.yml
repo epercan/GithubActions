@@ -1,11 +1,9 @@
 name: Log action
 'on':
   label:
-    types:
-      - created
+    types: [created]
   issues:
-    types:
-      - opened
+    types: [opened]
 jobs:
   log:
     runs-on: ubuntu-latest
