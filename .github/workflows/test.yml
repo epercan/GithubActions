@@ -10,6 +10,5 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-      '-run': >-
         echo "Trigger - ${{ github.event_name }},user - ${{ github.actor }},
         date - `date`"
