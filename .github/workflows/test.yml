@@ -1,11 +1,15 @@
 name: Log action
-on:
+'on':
   label:
-    types: [created]
+    types:
+      - created
   issues:
-    types: [opened]
+    types:
+      - opened
 jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "Trigger - ${{ github.event_name }},user - ${{ github.actor }}, date - `date`"
+      '-run': >-
+        echo "Trigger - ${{ github.event_name }},user - ${{ github.actor }},
+        date - `date`"
